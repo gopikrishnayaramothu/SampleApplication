@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function rate()
+{
+var a=document.getElementByName('amt').value;
+var b=document.getElementByName('rate').value;
+var c=document.getElementByName('time').value;
+var int=(a*b*c)/100;
+var total=a+c;
+alert(total);
+}</script>
+</head>
+<body onsubmit="rate()">
+ENTER AMOUNT:<input type="text" name="amt">
+ENTER INTRET RATE:<input type="text" name="rate">
+ENTER DURATION IN YEARS:<input type="text" name="time">
+<input type="submit" value="SUBMIT">
+</body>
+</html>
